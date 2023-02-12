@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9699K618P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S9699K618P');
+</script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lapiskye - Your Free AI</title>
-    
-  
     <script type="module" crossorigin src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta property="og:description" content="A conversational AI system that listens, learns, and challenges">
   </head>
   <body>
+    <style>
+      #app {
+        min-height: 94vh;
+        height: auto;
+        width: 100%;
+      }
+    </style>
     <div id="app">
       <div id="chat_container">
 
@@ -19,11 +32,14 @@
       </div>
 
       <form>
-        <textarea name="prompt" rows="1" cols="1" placeholder="..." autofocus></textarea>
+        <textarea name="prompt" rows="1" cols="1" placeholder="Ask me anything..." autofocus></textarea>
         <button type="submit"><img src="/assets/send.svg" alt="send" />
       </form>
     </div>
 
+    <div style="background-color: lightgray; padding: 10px; text-align: center;">
+      Version History: v0.04- Beta release-Feb 12, 2023 
     
+        </div> 
   </body>
 </html>
